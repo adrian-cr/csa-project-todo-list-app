@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>To-Do List</title>
+</head>
+<body>
+<header>
+  <div id="search-bar">
+    <input class="text-field" id="search-field" type="text" placheolder="filter by task name...">
+    <img id="search-icon" src="./images/search_icon.svg">
+  </div>
+</header>
+<main>
+  <div class="task-container">
+    <button class="task-button delete-button" alt="delete">❌</button>
+    <p class="task-title">Feed the dog</p>
+    <button class="task-button complete-button" alt="complete"><img/ src="./images/check_icon.svg"></button>
+  </div>
+  <div class="task-container">
+    <button class="task-button delete-button" alt="delete">❌</button>
+    <p class="task-title">Water the plants</p>
+    <button class="task-button complete-button" alt="complete"><img/ src="./images/check_icon.svg"></button>
+  </div>
+  <div class="task-container">
+    <button class="task-button delete-button" alt="delete">❌</button>
+    <p class="task-title">Go to the store for more milk</p>
+    <button class="task-button complete-button" alt="complete"><img/ src="./images/check_icon.svg"></button>
+  </div>
+  <input class="add-field" id="task-title-field" id=type="text"/>
+  <button class="task-button" id="add-button" alt="complete">Add</button>
+  <p id="error-message"><i>Task title must not be empty!</i></p>
+</main>
+<footer>
+
+  <div class="stats-wrapper">
+    <div class="stats-container" id="in-progress-container">
+      <h3 class="stats-subheading" id="in-progress-subheading">In Progress:</h3>
+      <p class="stats-counter" id="in-progress-counter">2</p>
+    </div>
+    <h2 id="stats-heading">Task Stats</h2>
+    <div class="stats-container" id="completed-container">
+      <h3 class="stats-subheading" id="completed-subheading">Completed:</h3>
+      <p class="stats-counter" id="completed-counter">5</p>
+    </div>
+  </div>
+
+</footer>
+<script src="index.js"> </script>
+</body>
+</html>
