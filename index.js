@@ -5,6 +5,7 @@ const errorMessage = document.getElementById("error-message");
 const inProgressCounter = document.getElementById("in-progress-counter");
 const completedCounter = document.getElementById("completed-counter");
 const searchField = document.getElementById("search-field");
+const searchButton = document.getElementById("search-icon");
 
 function updateStats() {
   const tasks = main.querySelectorAll(".task-container");
@@ -83,7 +84,7 @@ addButton.addEventListener("click", addTask);
 addField.addEventListener("keydown", e => {
   if (e.key === "Enter") addTask();
 });
-searchField.addEventListener("input", filterTasks);
+searchButton.addEventListener("click", filterTasks);
 
 errorMessage.style.display = "none";
 updateStats();
